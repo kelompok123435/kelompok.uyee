@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KELOMPOK BEBAS </title>
+<!--
+Template 2110 Character
+http://www.tooplate.com/view/2110-character
+-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+
+<body class="tm-bg-dark">
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <h2 class="tm-text-uppercase">
+                Mengapa harus mempunyai hobi?
+            </h2>
+        </header>
+            <p class="tm-hero-text">&ldquo;hobi peran yang sangat penting dalam kehidupan kita hobi memberi kita kesempatan untuk melarikan diri dari rutinitas sehari-hari yang sering kali penuh tekanan. Aktivitas yang kita nikmati dapat mengalihkan perhatian dari masalah atau kekhawatiran, membantu kita merasa lebih santai dan tenang. Serta tempat menyalurkan Kreativitas hobi memberikan ruang bagi ekspresi diri dan kreativitas.&rdquo;</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">HOBI</h1>
+                </div>
+            </header>
+        </div>
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="img/9b56a61ca365c41b44318d195b58e7c86195bfa4.jpeg" alt="Image" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
+            data-mobile-seq-no="5">
+            <h2 class="tm-text-uppercase">
+                KHANSA NADHIRA.S
+                <h2 class="tm-text-uppercase">
+                    Menari
+            </h2>
+        </header>
+            <p>alasan saya bisa menyukai menari karena menari adalah cara saya untuk mengekspresikan emosi, perasaan, dan cerita tanpa menggunakan kata-kata.Menari juga cara seseorang merasakan dan menghargai seni, budaya, dan tradisi tertentu, terutama melalui tarian tradisional atau kontemporer.
+                .</p>
+            <div class="tm-text-right">
+                <a href="#" class=></a>
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="img/image-04.jpg" alt="Image" class="tm-img-left">
+        </div>
+        <div class="tm-footer" id="tmFooter" data-desktop-seq-no="5" data-mobile-seq-no="9">
+        </div>
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="img/2b4ed5e3-fc5d-4ce2-879a-3f989be81cca.jpg" alt="Image">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                    </p>Galang Bhakti Praja Utama
+                    <h2 class="tm-text-uppercase">
+                        Bermain Game
+                    </h2>
+                </header>
+                <p> bermain game bukan sekadar hiburan, tetapi juga cara untuk melatih strategi, kerjasama tim, dan kemampuan berpikir cepat.
+                    Bermain game memberikan kesempatan untuk mempunyai teman dari berbagai belahan dunia.
+                <!-- -->
+            </div>
+        </div>
+
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="img/mee.jpg" alt="Image">
+        </div>
+                </form>
+            </div>
+
+            <div class="tm-form-section-tag">
+                        
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script>
+
+        let callAdjustLayout;
+        let currentLayout = "desktop",
+            nextLayout = "desktop";
+
+        /**
+         * detect IE
+         * returns version of IE or false, if browser is not Internet Explorer
+         */
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+
+            var edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                // Edge (IE 12+) => return version number
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+
+            // other browser
+            return false;
+        }
+
+        // Adjust layout based on the browser width
+        function adjustLayout() {
+            let block1, block2, block3, block4, block5, block6, block7, block8, block9;
+
+            if (window.innerWidth <= 1199) {
+                // Mobile layout
+                nextLayout = "mobile";
+                block1 = $("div[data-mobile-seq-no='1']");
+                block2 = $("div[data-mobile-seq-no='2']");
+                block3 = $("div[data-mobile-seq-no='3']");
+                block4 = $("div[data-mobile-seq-no='4']");
+                block5 = $("div[data-mobile-seq-no='5']");
+                block6 = $("div[data-mobile-seq-no='6']");
+                block7 = $("div[data-mobile-seq-no='7']");
+                block8 = $("div[data-mobile-seq-no='8']");
+                block9 = $("div[data-mobile-seq-no='9']");
+            } else {
+                // Desktop layout
+                nextLayout = "desktop";
+                block1 = $("div[data-desktop-seq-no='1']");
+                block2 = $("div[data-desktop-seq-no='2']");
+                block3 = $("div[data-desktop-seq-no='3']");
+                block4 = $("div[data-desktop-seq-no='4']");
+                block5 = $("div[data-desktop-seq-no='5']");
+                block6 = $("div[data-desktop-seq-no='6']");
+                block7 = $("div[data-desktop-seq-no='7']");
+                block8 = $("div[data-desktop-seq-no='8']");
+                block9 = $("div[data-desktop-seq-no='9']");
+            }
+
+            if (nextLayout !== currentLayout) {
+                // Reorder blocks based on their seq no
+                block1.after(block2.detach());
+                block2.after(block3.detach());
+                block3.after(block4.detach());
+                block4.after(block5.detach());
+                block5.after(block6.detach());
+                block6.after(block7.detach());
+                block7.after(block8.detach());
+                block8.after(block9.detach());
+                currentLayout = nextLayout;
+            }
+        }
+
+        // Adjust layout upon window resize
+        window.onresize = function () {
+            clearTimeout(callAdjustLayout);
+            callAdjustLayout = setTimeout(adjustLayout, 100);
+        }
+
+        // DOM is ready
+        $(function () {
+            if (detectIE()) {
+                alert('Please use the latest version of Chrome or Firefox for best browsing experience.');
+            }
+
+            adjustLayout();
+        })
+    </script>
+</body>
+
+</html>
